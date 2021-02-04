@@ -41,7 +41,8 @@ const page = setInterval(() => {
     pageTitle.style.color === "white" ? "yellow" : "white";
   
   h2s.forEach(h2 => {
-    h2.style.color = 
-      h2.style.color === "black" ? "white" : "black";
+    if (pageTitle.style.color === "white")
+      h2.style.color = "black";
+    else h2.style.color = "white"
   });
 }, 1500);
