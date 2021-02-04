@@ -3,6 +3,9 @@ const cssTitle = document.querySelector("#css-title");
 const jsTitle = document.querySelector("#js-title");
 const blueSquare = document.querySelector("#blue-square");
 const pageTitle = document.getElementById("page-title");
+const h2s = document.querySelectorAll("h2");
+
+h2s.forEach(h2 => h2.style.color = "black");
 
 blueSquare.style.marginLeft = "0px";
 blueSquare.style.backgroundColor = "blue";
@@ -36,4 +39,9 @@ pageTitle.onmouseleave = () => {
 const page = setInterval(() => {
   pageTitle.style.color =
     pageTitle.style.color === "white" ? "yellow" : "white";
+  
+  h2s.forEach(h2 => {
+    h2.style.color = 
+      h2.style.color === "black" ? "white" : "black";
+  });
 }, 1500);
