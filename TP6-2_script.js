@@ -1,6 +1,3 @@
-const htmlTitle = document.querySelector("#html-title");
-const cssTitle = document.querySelector("#css-title");
-const jsTitle = document.querySelector("#js-title");
 const blueSquare = document.querySelector("#blue-square");
 const pageTitle = document.getElementById("page-title");
 const h2s = document.querySelectorAll("h2");
