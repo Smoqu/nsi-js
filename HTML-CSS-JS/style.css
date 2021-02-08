@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+#chrono {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#count {
+  padding: 10px;
+  background-color: purple;
+  border-radius: 10px;
+  color: white;
+}
+
+button {
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+  padding: 20px;
+}
