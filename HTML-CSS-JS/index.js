@@ -14,14 +14,19 @@ function countInterval() {
   }, 1000);
 }
 
-startBtn.onclick = countInterval;
+startBtn.onclick = () => {
+  startBtn.disabled = true;
+  countInterval();
+};
 
 stopBtn.onclick = () => {
   clearInterval(interval);
+  startBtn.disabled = true;
 };
 
 resetBtn.onclick = () => {
   clearInterval(interval);
   count = 0;
   countP.innerHTML = count;
+  startBtn.disabled = true;
 };
