@@ -21,12 +21,12 @@ startBtn.onclick = () => {
 
 stopBtn.onclick = () => {
   clearInterval(interval);
-  startBtn.disabled = true;
+  startBtn.disabled = false;
 };
 
 resetBtn.onclick = () => {
   clearInterval(interval);
   count = 0;
   countP.innerHTML = count;
-  startBtn.disabled = true;
+  startBtn.disabled = false;
 };
